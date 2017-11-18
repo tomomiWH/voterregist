@@ -1,0 +1,221 @@
+<!--tomomiWH -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Form Entry</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="form.html">FORM</a>
+        <a href="leads.html">DISPLAY ALL</a>
+        <a href="widget.html">WIDGET</a>
+        <a href="aboutme.html">ABOUT</a>
+    </nav>
+
+    <p>
+    </p>
+
+    <div id="DivForm">
+        <form action="results.html" method="get" id="FormVoters" onsubmit="return Validate();">
+
+            <label for="firstname">First Name:</label>
+            <span id="SpanFirstError" class="error">*</span>
+            <input id="TBFName" name="fname" class="tbMedium" type="text" tabindex="1" placeholder="Enter First Name" />
+
+            <label for="lastname">Last Name:</label>
+            <span id="SpanLastError" class="error">*</span>
+            <input id="TBLName" name ="lname" class="tbMedium" type="text" tabindex="2" placeholder="Enter Last Name" />
+
+            <label for="streetaddress">Street Address:</label>
+            <span id="SpanAddressError" class="error">*</span>
+            <input id="TBAddress" name ="address" class="tbMedium" type="text" tabindex="3" placeholder="Enter Address" />
+
+            <label for="city">City:</label>
+            <span id="SpanCityError" class="error">*</span>
+            <input id="TBCity" name="city" class="tbMedium" type="text" tabindex="4" placeholder="Enter City" />
+
+            <label for="state">State:</label>
+            <span id="SpanStateError" class="error">*</span>
+            <select id="DDState" name ="state" tabindex="5">
+                <option value="">Select State</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>
+
+            <label for="zipcode">Zipcode:</label>
+            <span id="SpanZipError" class="error">*</span>
+            <input id="TBZipcode" name="zip" class="tbMedium" type="text" tabindex="6" placeholder="Enter Zipcode" />
+
+            <label for="phone">Phone Number:</label>
+            <span id="SpanPhoneError" class="error">*</span>
+            <input id="TBPhone" name="phone" class="tbMedium" type="text" tabindex="7" placeholder="Enter Phone Number" />
+            <br />
+
+            <lable class="mediumlable" for="gender">Gender:</lable>
+            <span id="SpanGenderError" class="error">*</span>
+            <label class="mediumlable"><input type="radio" name="Gender" id="RBMale" value="Male" tabindex="8">Male</label>
+            <label class="mediumlable"><input type="radio" name="Gender" id="RBFemale" value="Female" tabindex="9">Female</label>
+
+            <br />
+            <br />
+            <label for="party">Political Party:</label>
+            <span id="SpanPartyError" class="error">*</span>
+            <label class="mediumlable"><input  type="radio" name="Party" id="RBDemocrat" value="Democrat" tabindex="10">Democrat</label>
+            <label class="mediumlable"><input  type="radio" name="Party" id="RBRepublican" value="Republican" tabindex="11">Republican</label>
+            <label class="mediumlable"><input  type="radio" name="Party" id="RBIndependent" value="Independent" tabindex="12">Independent</label>
+            <label class="shortlabel"><input  type="radio" name="Party" id="RBGreen" value="Green" tabindex="13">Green</label>
+            <label class="mediumlable"><input  type="radio" name="Party" id="RBLibertarian" value="Libertarian" tabindex="14">Libertarian</label>
+            <label class="shortlabel"><input  type="radio" name="Party" id="RBOther" value="Other" tabindex="15">Other</label>
+            <br />
+            <br />
+            <label>Hobbies (optional):</label>
+            <label class="mediumlable"><input type="checkbox" name="CGHobbies" id="CBTraveling" value="Traveling" tabindex="16" />Traveling</label>
+            <label class="mediumlable"><input type="checkbox" name="CGHobbies" id="CBReading" value="Reading" tabindex="17" />Reading</label>
+            <label class="mediumlable"><input type="checkbox" name="CGHobbies" id="CBTechnology" value="Technology" tabindex="18" />Technology</label>
+            <label class="shortlabel"><input type="checkbox" name="CGHobbies" id="CBGolfing" value="Golfing" tabindex="19" />Golfing</label>
+            <label class="mediumlable"><input type="checkbox" name="CGHobbies" id="CBJogging" value="Jogging" tabindex="20" />Jogging</label>
+            <label class="mediumlable"><input type="checkbox" name="CGHobbies" id="CBGaming" value="Gaming" tabindex="21" />Gaming</label>
+            <label class="mediumlable"><input type="checkbox" name="CGHobbies" id="CBCooking" value="Cooking" tabindex="22" />Cooking</label>
+            <label class="mediumlable"><input type="checkbox" name="CGHobbies" id="CBOuting" value="Outdoors" tabindex="23" />Outdoors</label>
+            <label class="shortlabel"><input type="checkbox" name="CGHobbies" id="CBMusic" value="Music" tabindex="24" />Music</label>
+            <label class="longlabel"><input type="checkbox" name="CGHobbies" id="CBSnowboarding" value="Snowboarding" tabindex="25" />Snowboarding</label>
+            <br />
+            <br />
+            <label for="yrsalary">Yearly Salary:</label>
+            <span id="SpanSalaryError" class="error">*</span>
+            <input id="TBSalary" name="salary" class="tbMedium" type="text" tabindex="26" placeholder="Enter Yearly Saraly" />
+
+            <label>Birth State:</label>
+            <span id="SpanStateBornError" class="error">*</span>
+            <select id="DDStateBorn" name="bornstate" tabindex="27">
+                <option value="">Select State</option>
+                <option value="Not born in the US">Not born in the US</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>>
+            </select>
+
+            <label>Number of Poeople in Household:</label>
+            <span id="SpanHouseholdsError" class="error">*</span>
+            <select id="DDHouseholds" name ="households" tabindex="28">
+                <option value="">Select number of people in household</option>
+            </select>
+            <br />
+            <div id="DivMessage" class="error center"> <span class="error">*</span>&nbsp;*Required fields</div>
+            <div id="DivSubmitMessage" class="add center"> <span class="add">*</span>&nbsp;Thank you. Your voter's registration has been registered.</div>
+            <br />
+            <div class="center">
+                <input id="BtnSubmit" type="submit" value="Submit" />&nbsp;&nbsp;
+                <input id="BtnReset" type="reset" value="Reset" />&nbsp;&nbsp;
+                <!--<input id="BtnClear" type="button" value="Clear Storage" />-->
+            </div>
+            <br />
+
+        </form>
+    </div>
+
+    <footer class="center fontcyan"><small><i>Copyright &copy; 2016 Tomomi Watanabe Hudspath</i></small></footer>
+
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

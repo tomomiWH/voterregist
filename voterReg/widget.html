@@ -1,0 +1,82 @@
+<!--tomomiWH  -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Widget</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="form.html">FORM</a>
+        <a href="leads.html">DISPLAY ALL</a>
+        <a href="widget.html">WIDGET</a>
+        <a href="aboutme.html">ABOUT</a>
+
+    </nav>
+    <p></p>
+
+    <div id="DivWidget" class="center">
+        <h3>Simple Text Editor</h3>
+        <textarea id="TXTArea" rows="10" cols="90" placeholder="Enter Text here..."></textarea>
+        <br />
+        <p></p>
+        <!-- DropDown for Color -->
+        <label for="fontcolor" class="longlabel">Choose Font Color:</label>
+        <select id="DDColor" name="color" onclick="changeColor()">
+            <option value="">Select Color</option>
+            <option value="Red">Red</option>
+            <option value="White">White</option>
+            <option value="Green">Green</option>
+            <option value="Black">Black</option>
+            <option value="Blue ">Blue</option>
+            <option value="Pink">Pink</option>
+        </select>
+        <label for="shortspace"class="shortlabel" value=""></label>
+
+        <!-- Button for Bold Onn/Off -->
+        <input type="button" id="BtnBold" class="greenButton" value="Bold OFF/ON" onclick="Bold()" />
+        <p></p>
+
+        <!-- DropDown for FontSize -->
+        <label for="fontsize" class="longlabel">Choose Font Size:</label>
+        <select id="DDSize" name="size" onclick="changeSize()">
+            <option value="">Select Size</option>
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="x-large">x-large</option>
+        </select>
+        <label for="shortspace" class="shortlabel" value=""></label>
+
+        <!-- Button Italic Off/On -->
+        <input type="button" id="BtnItalic" class="greenButton" value="Italic OFF/ON" onclick="Italic()" />
+     <br />
+        <p></p>
+        <br />
+        <!-- Count Button -->
+        <input type="button" id="BtnCount" class="pinkButton" value="Count" onclick="countText()" />
+        <p class="bold fontmedium spanfont">
+            Total Characters:
+            <span id="SpanCharResult" class="bold fontmedium fontwhite"></span>
+        </p>
+        <p class="bold fontmedium spanfont">
+            Total Words:
+            <span id="SpanWordResult" class="bold fontmedium fontwhite"></span>
+        </p>
+        <p class="bold fontmedium spanfont">
+            Total Sentences:
+            <span id="SpanSentenceResult" class="bold fontmedium fontwhite"></span>
+        </p>
+
+
+    </div>
+
+
+
+    <footer class="center fontcyan"><small><i>Copyright &copy; 2016 Tomomi Watanabe Hudspath</i></small></footer>
+
+
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

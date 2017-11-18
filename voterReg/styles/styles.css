@@ -1,0 +1,482 @@
+/*styles.css   tomomiWH*/
+
+/*For all pages*/
+body {
+    background-color: #263238;
+    font-family: 'Century Gothic', Century, Tahoma;
+    /*font: #eceff1;*/
+    background-image: url('../img/capitol.png');
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /*position: fixed;*/
+    width: 100%;
+    height: 50px;
+    background-color: rgba(4, 9, 42, 0.50);
+    z-index: 99;
+    text-align: center;
+    font-weight: bold;
+}
+
+    nav a {
+        text-decoration: none;
+        /*color: #cfd8dc;*/
+        /*color:#006064;*/
+        color: #b2ebf2;
+        margin-left: 40px;
+        line-height: 50px;
+        padding: 15px 10px 15px 10px;
+    }
+
+        nav a:hover {
+            color: #ffca28;
+            padding: 15px 10px 15px 10px;
+            background-color: #616161;
+        }
+
+
+input[type=button], input[type=submit], input[type=reset] {
+    color: white;
+    font-size: 16px;
+    font-family: 'Century Gothic', Century, Tahoma;
+    font-weight: bold;
+    background-color: #ff5722;
+    border: 1px solid #ff5722;
+    padding: 3px 15px 3px 15px;
+    border-radius: 3px;
+    width: 170px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+}
+
+    input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+        color: white;
+        background-color: #b71c1c;
+        border: 1px solid #b71c1c;
+    }
+
+
+
+.btn {
+    color: white;
+    background-color: #006064;
+    border: 1px solid #006064;
+    font-size: 16px;
+    font-family: 'Century Gothic', Century, Tahoma;
+    font-weight: bold;
+    padding: 3px 15px 3px 15px;
+    border-radius: 3px;
+    width: 100px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+}
+
+    .btn:hover {
+        color: white;
+        background-color: #00b8d4;
+        border: 1px solid #00b8d4;
+    }
+
+
+
+/*First Page*/
+#DivIndex {
+    width: 550px;
+
+    padding: 100px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.70);
+    color: #eceff1;
+}
+
+#DivFooter{
+    padding-top: 200px;
+}
+
+/*Second Page Regitration Form*/
+#DivForm {
+    width: 550px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.70);
+    color: #eceff1;
+}
+
+label {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 125px;
+    font-family: 'Century Gothic', Century, Tahoma;
+    font-size: 16px;
+    text-align: right;
+    /*cursor: pointer;*/
+    padding: 10px;
+}
+
+.longlabel {
+    width: 200px;
+    padding: 1px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.mediumlable {
+    width: 125px;
+    cursor: pointer;
+    padding: 1px;
+    text-align: right;
+}
+
+.shortlabel {
+    /*display: inline-block;
+    vertical-align: baseline;*/
+    width: 80px;
+    cursor: pointer;
+    padding: 1px;
+    text-align: right;
+}
+
+.minilabel {
+    width: 50px;
+    cursor: pointer;
+    padding: 1px;
+    text-align: right;
+}
+
+
+.tbMedium {
+    width: 280px;
+    font-family: 'Century Gothic', Century, Tahoma;
+    font-size: 15px;
+    text-align: left;
+    border-radius: 2px;
+    background-color: #eceff1;
+}
+
+.tbShort {
+    width: 120px;
+    height: 20px;
+    font-family: 'Century Gothic', Century, Tahoma;
+    font-size: 15px;
+    text-align: right;
+    border-radius: 3px;
+    background-color: #eceff1;
+    color: navy;
+}
+
+
+
+
+
+/*Second Page Registration Form Select Dropdown*/
+#DDState, #DDStateBorn, #DDHouseholds {
+    width: 285px;
+    font-family: 'Century Gothic', Century, Tahoma;
+    font-size: 15px;
+    text-align: left;
+    border-radius: 2px;
+    background-color: #eceff1;
+    color: #263238;
+}
+
+
+/*Second Page Errors and Messages*/
+.noregister {
+    color: #3e2723;
+    font-family: 'Lucida Handwriting', 'Lucida Calligraphy', 'Segoe Script';
+}
+
+.error {
+    color: coral;
+    font-family: 'Lucida Handwriting', 'Lucida Calligraphy', 'Segoe Script';
+    display: none;
+}
+
+.add {
+    color: dodgerblue;
+    font-family: 'Lucida Handwriting', 'Lucida Calligraphy', 'Segoe Script';
+    display: none;
+}
+
+/*Third Page URL Var*/
+#DivURLResult {
+    width: 550px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.70);
+    color: #eceff1;
+}
+
+
+/*Fourth Page ALl Display Result*/
+
+#DivAllRecords {
+    width: 1250px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.70);
+    color: #eceff1;
+}
+
+label {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: right;
+    /*float: none;*/
+    cursor: pointer;
+}
+
+table {
+    border: 1px solid;
+    border-radius: 2px;
+    margin: auto;
+    width: 100%;
+}
+
+td, th {
+    /*border-style: none;*/
+    /*padding: 0.5em;*/
+    font-family: 'Century Gothic', Century, Tahoma;
+}
+
+tr {
+    background-color: #006064;
+}
+
+caption {
+    font-family: 'Century Gothic', Century, Tahoma;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+}
+
+tr:nth-of-type(even) {
+    background-color: black;
+}
+
+
+/*Fifth Page Widget*/
+#DivWidget {
+    width: 950px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.70);
+    color: #eceff1;
+}
+
+textarea {
+    font-family: 'Century Gothic', Century, Tahoma;
+    font-size: 16px;
+    background-color: #cfd8dc;
+    border-radius: 2px;
+    width: 600px;
+    height: 200px;
+}
+
+
+#DDColor, #DDSize {
+    width: 120px;
+    font-family: 'Century Gothic', Century, Tahoma;
+    font-size: 15px;
+    text-align: left;
+    border-radius: 2px;
+    background-color: #eceff1;
+    color: #263238;
+}
+
+input[type=button].pinkButton {
+    color: white;
+    background-color: #880e4f;
+    border: 1px solid #880e4f;
+}
+
+    input[type=button].pinkButton:hover {
+        color: white;
+        background-color: #c51162;
+        border: 1px solid #c51162;
+    }
+
+input[type=button].greenButton {
+    color: white;
+    background-color: #006064;
+    border: 1px solid #006064;
+}
+
+    input[type=button].greenButton:hover {
+        color: white;
+        background-color: #00b8d4;
+        border: 1px solid #00b8d4;
+    }
+
+/*class -- general use*/
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.fontgreen {
+    color: #009688;
+}
+
+.fontred {
+    color: #c62828;
+}
+
+.fontcyan {
+    color: #006064;
+}
+
+.fontyellow {
+    color: #ffca28;
+}
+
+.fontdeeporange {
+    color: #ff5722;
+}
+
+.fontwhite {
+    color: white;
+}
+
+.fontlightgray {
+    color: #616161;
+}
+
+.fontimgh{
+    color:#cfd8dc;
+}
+
+
+.spanfont {
+    color: #b71c1c;
+}
+
+.fontmedium {
+    font-size: 16px;
+}
+
+.posfixed {
+    position: fixed;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+
+/*About*/
+
+body.backimg {
+    font-family: 'Century Gothic', Century, Tahoma;
+    background-image: url('../img/lavender.jpg');
+    /*font: #eceff1;*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffebee;
+    /*background-attachment: fixed;
+    background-repeat: no-repeat;*/
+}
+
+#DivAboutMe {
+    width: 950px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.70);
+    color: #263238;
+    font-size: 18px;
+}
+
+
+ul.pic {
+    list-style-type: none;
+}
+
+li.picture {
+    display: inline-block;
+    width: 225px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    margin: 20px 20px 20px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    /*font-style: italic;*/
+    font-family: 'Century Gothic', Century, Tahoma;
+}
+
+.container {
+    max-width: 600px;
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    transition: ease-in-out;
+
+}
+
+    .container div {
+        background-color: white;
+        width: 100%;
+        display: inline-block;
+        display: none;
+        transition: ease-in-out;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+button {
+    position: absolute;
+}
+
+
+
+.next {
+    right: 2px;
+}
+
+.prev {
+    left: 2px;
+}
+
+.imgdisplay {
+    display: inline-block;
+}
+
+
+
+/*Last Page IMG About Me */
+.backgroundimg {
+    background-image: url('../img/cherry.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.lavender {
+    background-image: url('../img/lavender.jpg');
+}
+
+.pyramid {
+    background-image: url('../img/imgPyramid.JPG');
+}
+
+.rotateimg {
+    transform: rotate(90deg);
+}
